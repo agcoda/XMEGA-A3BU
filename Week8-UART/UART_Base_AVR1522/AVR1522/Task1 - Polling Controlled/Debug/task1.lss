@@ -1,0 +1,587 @@
+
+task1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000003d2  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000002  00802000  000003d2  00000446  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .comment      00000030  00000000  00000000  00000448  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000478  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000050  00000000  00000000  000004b8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00003bd2  00000000  00000000  00000508  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000034a4  00000000  00000000  000040da  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000002e6  00000000  00000000  0000757e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  000000c0  00000000  00000000  00007864  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00002780  00000000  00000000  00007924  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000003a9  00000000  00000000  0000a0a4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000040  00000000  00000000  0000a44d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 fa 00 	jmp	0x1f4	; 0x1f4 <__ctors_end>
+   4:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+   8:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+   c:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  10:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  14:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  18:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  1c:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  20:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  24:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  28:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  2c:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  30:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  34:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  38:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  3c:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  40:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  44:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  48:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  4c:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  50:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  54:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  58:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  5c:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  60:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  64:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  68:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  6c:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  70:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  74:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  78:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  7c:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  80:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  84:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  88:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  8c:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  90:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  94:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  98:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  9c:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  a0:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  a4:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  a8:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  ac:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  b0:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  b4:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  b8:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  bc:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  c0:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  c4:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  c8:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  cc:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  d0:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  d4:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  d8:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  dc:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  e0:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  e4:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  e8:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  ec:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  f0:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  f4:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  f8:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+  fc:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 100:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 104:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 108:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 10c:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 110:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 114:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 118:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 11c:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 120:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 124:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 128:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 12c:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 130:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 134:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 138:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 13c:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 140:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 144:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 148:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 14c:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 150:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 154:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 158:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 15c:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 160:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 164:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 168:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 16c:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 170:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 174:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 178:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 17c:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 180:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 184:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 188:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 18c:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 190:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 194:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 198:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 19c:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 1a0:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 1a4:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 1a8:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 1ac:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 1b0:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 1b4:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 1b8:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 1bc:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 1c0:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 1c4:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 1c8:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 1cc:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 1d0:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 1d4:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 1d8:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 1dc:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 1e0:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 1e4:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 1e8:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 1ec:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+ 1f0:	0c 94 18 01 	jmp	0x230	; 0x230 <__bad_interrupt>
+
+000001f4 <__ctors_end>:
+ 1f4:	11 24       	eor	r1, r1
+ 1f6:	1f be       	out	0x3f, r1	; 63
+ 1f8:	cf ef       	ldi	r28, 0xFF	; 255
+ 1fa:	cd bf       	out	0x3d, r28	; 61
+ 1fc:	df e3       	ldi	r29, 0x3F	; 63
+ 1fe:	de bf       	out	0x3e, r29	; 62
+ 200:	00 e0       	ldi	r16, 0x00	; 0
+ 202:	0c bf       	out	0x3c, r16	; 60
+ 204:	18 be       	out	0x38, r1	; 56
+ 206:	19 be       	out	0x39, r1	; 57
+ 208:	1a be       	out	0x3a, r1	; 58
+ 20a:	1b be       	out	0x3b, r1	; 59
+
+0000020c <__do_copy_data>:
+ 20c:	10 e2       	ldi	r17, 0x20	; 32
+ 20e:	a0 e0       	ldi	r26, 0x00	; 0
+ 210:	b0 e2       	ldi	r27, 0x20	; 32
+ 212:	e2 ed       	ldi	r30, 0xD2	; 210
+ 214:	f3 e0       	ldi	r31, 0x03	; 3
+ 216:	00 e0       	ldi	r16, 0x00	; 0
+ 218:	0b bf       	out	0x3b, r16	; 59
+ 21a:	02 c0       	rjmp	.+4      	; 0x220 <__do_copy_data+0x14>
+ 21c:	07 90       	elpm	r0, Z+
+ 21e:	0d 92       	st	X+, r0
+ 220:	a2 30       	cpi	r26, 0x02	; 2
+ 222:	b1 07       	cpc	r27, r17
+ 224:	d9 f7       	brne	.-10     	; 0x21c <__do_copy_data+0x10>
+ 226:	1b be       	out	0x3b, r1	; 59
+ 228:	0e 94 82 01 	call	0x304	; 0x304 <main>
+ 22c:	0c 94 e7 01 	jmp	0x3ce	; 0x3ce <_exit>
+
+00000230 <__bad_interrupt>:
+ 230:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000234 <toggleLED>:
+}
+//ledx toggle
+void toggleLED(unsigned ledNum){
+	//first call needs to set portR as output then init the output array
+	static unsigned init = 1;
+	if(init == 1){
+ 234:	20 91 00 20 	lds	r18, 0x2000	; 0x802000 <__DATA_REGION_ORIGIN__>
+ 238:	30 91 01 20 	lds	r19, 0x2001	; 0x802001 <__DATA_REGION_ORIGIN__+0x1>
+ 23c:	21 30       	cpi	r18, 0x01	; 1
+ 23e:	31 05       	cpc	r19, r1
+ 240:	49 f4       	brne	.+18     	; 0x254 <toggleLED+0x20>
+#define BIT1_MASK 0x02
+#define H_MS_DELAY_CT 11160			//each read is about 9 us from manual timing so 11160 reads is 100 ms.
+
+//write Value to RegAddress
+void WriteReg(unsigned regAddress, unsigned char Value){
+	*((volatile unsigned char *)regAddress) = Value;
+ 242:	2f ef       	ldi	r18, 0xFF	; 255
+ 244:	20 93 e0 07 	sts	0x07E0, r18	; 0x8007e0 <__TEXT_REGION_LENGTH__+0x7de7e0>
+ 248:	20 93 e7 07 	sts	0x07E7, r18	; 0x8007e7 <__TEXT_REGION_LENGTH__+0x7de7e7>
+	//first call needs to set portR as output then init the output array
+	static unsigned init = 1;
+	if(init == 1){
+		WriteReg(PORTR_DATA,0xff);
+		WriteReg(PORTR_DATA | PORT_OUTPUT,0xff);
+		init =0;
+ 24c:	10 92 00 20 	sts	0x2000, r1	; 0x802000 <__DATA_REGION_ORIGIN__>
+ 250:	10 92 01 20 	sts	0x2001, r1	; 0x802001 <__DATA_REGION_ORIGIN__+0x1>
+	}
+	
+	//writing 1 to the appropriate ledByte TOGGLES the LED
+	switch(ledNum){
+ 254:	00 97       	sbiw	r24, 0x00	; 0
+ 256:	19 f0       	breq	.+6      	; 0x25e <toggleLED+0x2a>
+ 258:	01 97       	sbiw	r24, 0x01	; 1
+ 25a:	29 f0       	breq	.+10     	; 0x266 <toggleLED+0x32>
+ 25c:	08 95       	ret
+#define BIT1_MASK 0x02
+#define H_MS_DELAY_CT 11160			//each read is about 9 us from manual timing so 11160 reads is 100 ms.
+
+//write Value to RegAddress
+void WriteReg(unsigned regAddress, unsigned char Value){
+	*((volatile unsigned char *)regAddress) = Value;
+ 25e:	81 e0       	ldi	r24, 0x01	; 1
+ 260:	80 93 e7 07 	sts	0x07E7, r24	; 0x8007e7 <__TEXT_REGION_LENGTH__+0x7de7e7>
+ 264:	08 95       	ret
+ 266:	82 e0       	ldi	r24, 0x02	; 2
+ 268:	80 93 e7 07 	sts	0x07E7, r24	; 0x8007e7 <__TEXT_REGION_LENGTH__+0x7de7e7>
+ 26c:	08 95       	ret
+
+0000026e <HmSDelay>:
+	}
+}
+//blink led if line reached
+//for debug only
+//delay an integer number of 100ms (ds)
+void HmSDelay(){
+ 26e:	88 e9       	ldi	r24, 0x98	; 152
+ 270:	9b e2       	ldi	r25, 0x2B	; 43
+	*((volatile unsigned char *)regAddress) = Value;
+}
+
+//read value in Regaddress and return
+unsigned ReadReg(unsigned regAddress){
+	return *((volatile unsigned char *)regAddress);
+ 272:	e7 ee       	ldi	r30, 0xE7	; 231
+ 274:	f7 e0       	ldi	r31, 0x07	; 7
+ 276:	20 81       	ld	r18, Z
+ 278:	01 97       	sbiw	r24, 0x01	; 1
+}
+//blink led if line reached
+//for debug only
+//delay an integer number of 100ms (ds)
+void HmSDelay(){
+	for(int i=0;i<H_MS_DELAY_CT;i++){
+ 27a:	e9 f7       	brne	.-6      	; 0x276 <HmSDelay+0x8>
+		ReadReg(PORTR_OUTPUT);
+	}
+	
+}
+ 27c:	08 95       	ret
+
+0000027e <Delay>:
+void Delay(int dS){
+ 27e:	0f 93       	push	r16
+ 280:	1f 93       	push	r17
+ 282:	cf 93       	push	r28
+ 284:	df 93       	push	r29
+	for(int i =0; i<dS;i++){
+ 286:	18 16       	cp	r1, r24
+ 288:	19 06       	cpc	r1, r25
+ 28a:	4c f4       	brge	.+18     	; 0x29e <Delay+0x20>
+ 28c:	8c 01       	movw	r16, r24
+ 28e:	c0 e0       	ldi	r28, 0x00	; 0
+ 290:	d0 e0       	ldi	r29, 0x00	; 0
+		HmSDelay();
+ 292:	0e 94 37 01 	call	0x26e	; 0x26e <HmSDelay>
+		ReadReg(PORTR_OUTPUT);
+	}
+	
+}
+void Delay(int dS){
+	for(int i =0; i<dS;i++){
+ 296:	21 96       	adiw	r28, 0x01	; 1
+ 298:	0c 17       	cp	r16, r28
+ 29a:	1d 07       	cpc	r17, r29
+ 29c:	d1 f7       	brne	.-12     	; 0x292 <Delay+0x14>
+		HmSDelay();
+	}
+}
+ 29e:	df 91       	pop	r29
+ 2a0:	cf 91       	pop	r28
+ 2a2:	1f 91       	pop	r17
+ 2a4:	0f 91       	pop	r16
+ 2a6:	08 95       	ret
+
+000002a8 <debugBlink>:
+
+//Use register read to delay approximately 100ms.
+
+void debugBlink(unsigned times){
+ 2a8:	0f 93       	push	r16
+ 2aa:	1f 93       	push	r17
+ 2ac:	cf 93       	push	r28
+ 2ae:	df 93       	push	r29
+	for(int i=0;i<times;i++){
+ 2b0:	00 97       	sbiw	r24, 0x00	; 0
+ 2b2:	f9 f0       	breq	.+62     	; 0x2f2 <debugBlink+0x4a>
+ 2b4:	8c 01       	movw	r16, r24
+ 2b6:	c0 e0       	ldi	r28, 0x00	; 0
+ 2b8:	d0 e0       	ldi	r29, 0x00	; 0
+		for(int i=0;i<2;i++){
+
+			toggleLED(LED0);
+ 2ba:	80 e0       	ldi	r24, 0x00	; 0
+ 2bc:	90 e0       	ldi	r25, 0x00	; 0
+ 2be:	0e 94 1a 01 	call	0x234	; 0x234 <toggleLED>
+			toggleLED(LED1);
+ 2c2:	81 e0       	ldi	r24, 0x01	; 1
+ 2c4:	90 e0       	ldi	r25, 0x00	; 0
+ 2c6:	0e 94 1a 01 	call	0x234	; 0x234 <toggleLED>
+			Delay(1);
+ 2ca:	81 e0       	ldi	r24, 0x01	; 1
+ 2cc:	90 e0       	ldi	r25, 0x00	; 0
+ 2ce:	0e 94 3f 01 	call	0x27e	; 0x27e <Delay>
+
+void debugBlink(unsigned times){
+	for(int i=0;i<times;i++){
+		for(int i=0;i<2;i++){
+
+			toggleLED(LED0);
+ 2d2:	80 e0       	ldi	r24, 0x00	; 0
+ 2d4:	90 e0       	ldi	r25, 0x00	; 0
+ 2d6:	0e 94 1a 01 	call	0x234	; 0x234 <toggleLED>
+			toggleLED(LED1);
+ 2da:	81 e0       	ldi	r24, 0x01	; 1
+ 2dc:	90 e0       	ldi	r25, 0x00	; 0
+ 2de:	0e 94 1a 01 	call	0x234	; 0x234 <toggleLED>
+			Delay(1);
+ 2e2:	81 e0       	ldi	r24, 0x01	; 1
+ 2e4:	90 e0       	ldi	r25, 0x00	; 0
+ 2e6:	0e 94 3f 01 	call	0x27e	; 0x27e <Delay>
+}
+
+//Use register read to delay approximately 100ms.
+
+void debugBlink(unsigned times){
+	for(int i=0;i<times;i++){
+ 2ea:	21 96       	adiw	r28, 0x01	; 1
+ 2ec:	c0 17       	cp	r28, r16
+ 2ee:	d1 07       	cpc	r29, r17
+ 2f0:	21 f7       	brne	.-56     	; 0x2ba <debugBlink+0x12>
+			toggleLED(LED0);
+			toggleLED(LED1);
+			Delay(1);
+		}
+	}
+	Delay(5); 
+ 2f2:	85 e0       	ldi	r24, 0x05	; 5
+ 2f4:	90 e0       	ldi	r25, 0x00	; 0
+ 2f6:	0e 94 3f 01 	call	0x27e	; 0x27e <Delay>
+}
+ 2fa:	df 91       	pop	r29
+ 2fc:	cf 91       	pop	r28
+ 2fe:	1f 91       	pop	r17
+ 300:	0f 91       	pop	r16
+ 302:	08 95       	ret
+
+00000304 <main>:
+ */
+
+void debugBlink(unsigned);
+
+int main(void)
+{
+ 304:	cf 93       	push	r28
+ 306:	df 93       	push	r29
+ 308:	cd b7       	in	r28, 0x3d	; 61
+ 30a:	de b7       	in	r29, 0x3e	; 62
+ 30c:	c0 5e       	subi	r28, 0xE0	; 224
+ 30e:	d1 40       	sbci	r29, 0x01	; 1
+ 310:	cd bf       	out	0x3d, r28	; 61
+ 312:	de bf       	out	0x3e, r29	; 62
+  
+	LEDPORT.DIR = 0xFF;
+ 314:	e0 ee       	ldi	r30, 0xE0	; 224
+ 316:	f7 e0       	ldi	r31, 0x07	; 7
+ 318:	8f ef       	ldi	r24, 0xFF	; 255
+ 31a:	80 83       	st	Z, r24
+	LEDPORT.OUT = 0xFF;
+ 31c:	84 83       	std	Z+4, r24	; 0x04
+	volatile char Rx_Buf[TEST_CHARS];
+
+	bool TransferError = false;
+
+	/* Pin 3 (TX) as output */
+	USART_PORT.DIRSET   = PIN3_bm;   
+ 31e:	e0 e4       	ldi	r30, 0x40	; 64
+ 320:	f6 e0       	ldi	r31, 0x06	; 6
+ 322:	88 e0       	ldi	r24, 0x08	; 8
+ 324:	81 83       	std	Z+1, r24	; 0x01
+	/* Pin 2 (RX) as input */
+	USART_PORT.DIRCLR   = PIN2_bm;
+ 326:	84 e0       	ldi	r24, 0x04	; 4
+ 328:	82 83       	std	Z+2, r24	; 0x02
+
+	/* USARTx0, 8 Data bits, No Parity, 1 Stop bit */
+	USART.CTRLC = (uint8_t) USART_CHSIZE_8BIT_gc 
+ 32a:	e0 ea       	ldi	r30, 0xA0	; 160
+ 32c:	f8 e0       	ldi	r31, 0x08	; 8
+ 32e:	83 e0       	ldi	r24, 0x03	; 3
+ 330:	85 83       	std	Z+5, r24	; 0x05
+	 * Example (9600bps)  :   - I/O clock = 2MHz
+	 *                        - 9600bps can be achieved by 9600bps / 2^0
+	 *                        - UBRR = 2MHz/(16*9600)-1 = 12.02
+	 *                        - ScaleFactor = 0
+	 */
+	USART.BAUDCTRLA = BSEL_VALUE;
+ 332:	8c e0       	ldi	r24, 0x0C	; 12
+ 334:	86 83       	std	Z+6, r24	; 0x06
+
+	/* Enable both RX and TX */
+	USART.CTRLB |= USART_RXEN_bm;
+ 336:	84 81       	ldd	r24, Z+4	; 0x04
+ 338:	80 61       	ori	r24, 0x10	; 16
+ 33a:	84 83       	std	Z+4, r24	; 0x04
+	USART.CTRLB |= USART_TXEN_bm;
+ 33c:	84 81       	ldd	r24, Z+4	; 0x04
+ 33e:	88 60       	ori	r24, 0x08	; 8
+ 340:	84 83       	std	Z+4, r24	; 0x04
+	debugBlink(3);
+ 342:	83 e0       	ldi	r24, 0x03	; 3
+ 344:	90 e0       	ldi	r25, 0x00	; 0
+ 346:	0e 94 54 01 	call	0x2a8	; 0x2a8 <debugBlink>
+ 34a:	0a e0       	ldi	r16, 0x0A	; 10
+ 34c:	10 e0       	ldi	r17, 0x00	; 0
+ 	uint8_t i;
+
+	volatile char Tx_Buf[TEST_CHARS];
+	volatile char Rx_Buf[TEST_CHARS];
+
+	bool TransferError = false;
+ 34e:	90 e0       	ldi	r25, 0x00	; 0
+	i = 0;
+	while (i != TEST_CHARS){
+		
+		Tx_Buf[i] = i;
+		/* Wait for previous character to be sent */
+		while ((USART.STATUS & USART_DREIF_bm) == 0){}
+ 350:	e0 ea       	ldi	r30, 0xA0	; 160
+ 352:	f8 e0       	ldi	r31, 0x08	; 8
+ 354:	30 c0       	rjmp	.+96     	; 0x3b6 <main+0xb2>
+for( int x=0; x < 10; x++)
+{
+	i = 0;
+	while (i != TEST_CHARS){
+		
+		Tx_Buf[i] = i;
+ 356:	a9 01       	movw	r20, r18
+ 358:	a1 e0       	ldi	r26, 0x01	; 1
+ 35a:	b0 e0       	ldi	r27, 0x00	; 0
+ 35c:	ac 0f       	add	r26, r28
+ 35e:	bd 1f       	adc	r27, r29
+ 360:	a2 0f       	add	r26, r18
+ 362:	b3 1f       	adc	r27, r19
+ 364:	2c 93       	st	X, r18
+		/* Wait for previous character to be sent */
+		while ((USART.STATUS & USART_DREIF_bm) == 0){}
+ 366:	81 81       	ldd	r24, Z+1	; 0x01
+ 368:	85 ff       	sbrs	r24, 5
+ 36a:	fd cf       	rjmp	.-6      	; 0x366 <main+0x62>
+		/* Transmit current character */
+		USART.DATA = Tx_Buf[i];   
+ 36c:	a1 e0       	ldi	r26, 0x01	; 1
+ 36e:	b0 e0       	ldi	r27, 0x00	; 0
+ 370:	ac 0f       	add	r26, r28
+ 372:	bd 1f       	adc	r27, r29
+ 374:	a4 0f       	add	r26, r20
+ 376:	b5 1f       	adc	r27, r21
+ 378:	8c 91       	ld	r24, X
+ 37a:	80 83       	st	Z, r24
+	
+		/* Wait until data is received */
+		while ((USART.STATUS & USART_RXCIF_bm) == 0){}
+ 37c:	81 81       	ldd	r24, Z+1	; 0x01
+ 37e:	88 23       	and	r24, r24
+ 380:	ec f7       	brge	.-6      	; 0x37c <main+0x78>
+		/* Read the received data */
+		Rx_Buf[i] = USART.DATA;
+ 382:	80 81       	ld	r24, Z
+ 384:	a1 ef       	ldi	r26, 0xF1	; 241
+ 386:	b0 e0       	ldi	r27, 0x00	; 0
+ 388:	ac 0f       	add	r26, r28
+ 38a:	bd 1f       	adc	r27, r29
+ 38c:	a4 0f       	add	r26, r20
+ 38e:	b5 1f       	adc	r27, r21
+ 390:	8c 93       	st	X, r24
+
+		/* Compare buffers */
+		if (Rx_Buf[i] != Tx_Buf[i]){
+ 392:	6c 91       	ld	r22, X
+ 394:	a1 e0       	ldi	r26, 0x01	; 1
+ 396:	b0 e0       	ldi	r27, 0x00	; 0
+ 398:	ac 0f       	add	r26, r28
+ 39a:	bd 1f       	adc	r27, r29
+ 39c:	a4 0f       	add	r26, r20
+ 39e:	b5 1f       	adc	r27, r21
+ 3a0:	8c 91       	ld	r24, X
+ 3a2:	68 13       	cpse	r22, r24
+			TransferError = true;
+ 3a4:	91 e0       	ldi	r25, 0x01	; 1
+ 3a6:	2f 5f       	subi	r18, 0xFF	; 255
+ 3a8:	3f 4f       	sbci	r19, 0xFF	; 255
+	USART.CTRLB |= USART_TXEN_bm;
+	debugBlink(3);
+for( int x=0; x < 10; x++)
+{
+	i = 0;
+	while (i != TEST_CHARS){
+ 3aa:	20 3f       	cpi	r18, 0xF0	; 240
+ 3ac:	31 05       	cpc	r19, r1
+ 3ae:	99 f6       	brne	.-90     	; 0x356 <main+0x52>
+ 3b0:	01 50       	subi	r16, 0x01	; 1
+ 3b2:	11 09       	sbc	r17, r1
+
+	/* Enable both RX and TX */
+	USART.CTRLB |= USART_RXEN_bm;
+	USART.CTRLB |= USART_TXEN_bm;
+	debugBlink(3);
+for( int x=0; x < 10; x++)
+ 3b4:	19 f0       	breq	.+6      	; 0x3bc <main+0xb8>
+ */
+
+void debugBlink(unsigned);
+
+int main(void)
+{
+ 3b6:	20 e0       	ldi	r18, 0x00	; 0
+ 3b8:	30 e0       	ldi	r19, 0x00	; 0
+ 3ba:	cd cf       	rjmp	.-102    	; 0x356 <main+0x52>
+		} //smy for
+	while (1){
+		/* Check for transfer error */
+		if (TransferError){
+			/* No light */
+			LEDPORT.OUT = 0xFF;
+ 3bc:	e0 ee       	ldi	r30, 0xE0	; 224
+ 3be:	f7 e0       	ldi	r31, 0x07	; 7
+ 3c0:	8f ef       	ldi	r24, 0xFF	; 255
+		i++;
+	}
+		} //smy for
+	while (1){
+		/* Check for transfer error */
+		if (TransferError){
+ 3c2:	99 23       	and	r25, r25
+ 3c4:	11 f0       	breq	.+4      	; 0x3ca <main+0xc6>
+			/* No light */
+			LEDPORT.OUT = 0xFF;
+ 3c6:	84 83       	std	Z+4, r24	; 0x04
+ 3c8:	fc cf       	rjmp	.-8      	; 0x3c2 <main+0xbe>
+		} else {  
+            /* Light */          
+            LEDPORT.OUT = 0x00;
+ 3ca:	14 82       	std	Z+4, r1	; 0x04
+ 3cc:	fa cf       	rjmp	.-12     	; 0x3c2 <main+0xbe>
+
+000003ce <_exit>:
+ 3ce:	f8 94       	cli
+
+000003d0 <__stop_program>:
+ 3d0:	ff cf       	rjmp	.-2      	; 0x3d0 <__stop_program>
